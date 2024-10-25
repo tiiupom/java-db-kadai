@@ -40,7 +40,7 @@ public class Employees_Chapter04 {
 			System.out.println("社員テーブルを作成しました:更新レコード数=" + rowCnt);
 			
 		} catch (SQLException e) {
-			System.out.println("e.getmessage");
+			System.out.println(e.getMessage());
 			// 例外が発生しても必ず実行する処理 finally文
 		} finally {
 			if(con != null) {
